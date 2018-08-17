@@ -7,6 +7,8 @@ client.on('ready', () => {
   client.user.setStatus("Online")
     client.user.setActivity(" Marine Server",{type: 'PLAYING'})
 });
+
+var prefix = "-"
 client.on('message', message => {
    if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'bc')) {
