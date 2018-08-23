@@ -13,11 +13,11 @@ client.on('ready', () => {
   console.log(' Mo3 Bot Is Online')
   console.log('---------------')
   client.user.setStatus("Online")
-    client.user.setActivity(" Type $help",{type: 'WATCHING'})
+    client.user.setActivity(" Type ohelp",{type: 'WATCHING'})
 	
 });
 	
-            var prefix = "$" ;
+            var prefix = "o" ;
 	
 	
 	/*
@@ -31,7 +31,7 @@ npm install queue
 */
 client.on('message', msg => {
 
-    if (msg.content == '$play') {
+    if (msg.content == 'oplay') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
@@ -232,7 +232,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 
-const adminprefix = "$";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+const adminprefix = "o";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 const devs = ['447846986775789580'];//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 client.on('message', message => {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
   var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
